@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Barber</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+  </head>
+  <body>
+    <section id="banner">
+      <img src="./image/logo.png" class="logo" />
+      <div class="banner-text">
+        <h1>Hair Studio</h1>
+        <p>Style Your Hair Is Style Your Life</p>
+        <div class="banner-btn">
+          <a href="https://www.google.com/search?q=barber&client=firefox-b-d&sca_esv=fd299e0f5b2672c9&sxsrf=ACQVn0854T9X0qLoJKnU0Lgdn-hTPjl2uA%3A1712852002513&ei=IgwYZvuCH7vgseMP4tCpgAo&ved=0ahUKEwj7m6b5xrqFAxU7cGwGHWJoCqAQ4dUDCBA&uact=5&oq=barber&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmJhcmJlcjIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixAzILEAAYgAQYigUYsQMyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyCxAuGIAEGLEDGNQCMgsQLhjUAhixAxiABDIFEAAYgARIzhNQpA5Y4xFwAXgAkAEAmAH2AaABxQOqAQMyLTK4AQPIAQD4AQGYAgOgApEEwgINEAAYgAQYigUYQxiwA8ICCxAAGAcYHhiwAxgKwgIKEAAYgAQYChiwA8ICDRAAGIAEGAoYsQMYsAPCAgoQABiABBiwAxgKwgIJEAAYBxgeGLADwgITEC4YQxiABBiKBRjIAxiwA9gBAcICERAuGAcYHhjIAxiwAxgK2AEBwgITEC4YgAQYAhjLARjIAxiwA9gBAcICCBAAGAcYHhgKwgIGEAAYBxgewgIKEAAYgAQYChixA8ICBxAAGIAEGArCAgUQLhiABJgDAIgGAZAGFLoGBggBEAEYCJIHBTEuMC4yoAfdGA&sclient=gws-wiz-serp"><span></span>Read More</a>
+          <a href="https://www.quora.com/How-much-do-barbers-in-India-working-in-expensive-barbershops-make"><span></span>Find Out</a>
+        </div>
+      </div>
+    </section>
+    <div id="sidenav">
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/Res%20w.html/index.html">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#" class="active">Services</a></li>
+          <li><a href="#">Testimonals</a></li>
+          <li><a href="#">Meet Us </a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menu-btn">
+      <img src="./image/menu.png" id="menu" />
+    </div>
+    <section id="features">
+      <div class="title-text">
+        <p>features</p>
+        <h1>Why Choose Us</h1>
+      </div>
+      <div class="features-box">
+        <div class="features">
+          <h1>Experienced Staff</h1>
+          <div class="features-desc">
+            <div class="feature-icons">
+              <i class="fa fa-shield"></i>
+            </div>
+            <div class="feature-text">
+              <p>
+                Donec eget ultricies sapi. Sed porttitor, mauris after lob
+                facilities, elit sapi.
+              </p>
+            </div>
+          </div>
+           <h1>Pre Booking Online</h1>
+          <div class="features-desc">
+            <div class="feature-icons">
+              <i class="fa fa-check-square-o"></i>
+            </div>
+            <div class="feature-text">
+              <p>
+                Donec eget ultricies sapi. Sed porttitor, mauris after lob
+                facilities, elit sapi.
+              </p>
+            </div>
+          </div>
+           <h1>Affordable Cost</h1>
+          <div class="features-desc">
+            <div class="feature-icons">
+              <i class="fa fa-inr"></i>
+            </div>
+            <div class="feature-text">
+              <p>
+                Donec eget ultricies sapi. Sed porttitor, mauris after lob
+                facilities, elit sapi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="features-img">
+          <img src="./image/barber-man.jpg" />
+        </div>
+      </div>
+    </section>
+    <script>
+      var menuBtn = document.getElementById("menu-btn");
+      var sidenav = document.getElementById("sidenav");
+      var menu = document.getElementById("menu");
+      menuBtn.onclick = function () {
+        if (sidenav.style.right == "-250px") {
+          sidenav.style.right = "0";
+          menu.src = "./image/close.png";
+        } else {
+          sidenav.style.right = "-250px";
+          menu.src = "./image/menu.png";
+        }
+      };
+    </script>
+  </body>
+</html>
